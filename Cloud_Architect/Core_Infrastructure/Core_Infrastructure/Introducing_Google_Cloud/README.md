@@ -71,7 +71,7 @@ It has 5 belowing traits:
 3.Which
 
 ## Service Account
-### You want to give permissions to a Compute Engine Virtual Machine rather than to a persno
+### You want to give permissions to a Compute Engine Virtual Machine rather than to a person
 
 ## Interacting with Google Cloud
 
