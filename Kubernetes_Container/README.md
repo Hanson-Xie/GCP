@@ -20,7 +20,5 @@
     - Container 透過將User spaces分離出來，只用以執行app的程式
     - Container 不像VM裝了整個的作業系統，且不用重啟整個作業系統來BOOT UP VM
 
-<div align="center">
-  <img src="/imgs/container_involving.png"><br>
-</div>
-
+下圖為特定server、VM與Container架構比較
+![container_img](imgs/container_involving.png)
