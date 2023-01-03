@@ -1,0 +1,366 @@
+<mxfile host="65bd71144e">
+    <diagram id="h8-nyggpswMjWNMo-d0T" name="Page-1">
+        <mxGraphModel dx="1382" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;resizable=0;containerType=tree;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="240" width="990" height="2540" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Vitrual Machine" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="40" y="1478.1860000000001" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Compute Engine&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="646.374" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" parent="2" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="9" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="-19664.824625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Preemptible&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="1867.2430000000002" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="11" source="4" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="-19624.824625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Predifined or custom machine types&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="188.76" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="13" source="11" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-19669.424625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;vCPUs (cores) and RAM&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="20" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="15" source="11" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-19668.824625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Storage&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="173.76" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="17" source="15" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-19574.824625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Zonal or regional persistent disk (HDD or SSD)&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="81.56" width="170" height="44.8" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="19" source="15" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-19531.864625000002" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Local SSD&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="166.36" width="170" height="44.8" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="21" source="15" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-19514.904625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Cloud Storage&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="251.16000000000003" width="170" height="44.8" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="23" source="11" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-19574.824625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Networking&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="317.52" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="25" source="11" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-19387.064625000003" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Linux or Windows&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="387.52" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="27" source="4" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-19164.304625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Features&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="1103.988" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="29" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-18824.040624999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Machine righsizing&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#009900;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="613.488" width="120" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="31" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-18288.147025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Availability policies&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="932.168" width="120" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="33" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-17835.147025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Global load balancing&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="1055.888" width="120" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="35" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-17367.279025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;OS patch mangement&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="1303.328" width="120" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="37" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-16870.543025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Preemptible and Spot VMs&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="530" y="1592.0079999999998" width="120" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="39" source="29" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-16344.939024999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Recommendation engine for optimum machine type&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="418.528" width="270" height="54.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="41" source="29" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-16510.139025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Cloud Monitoring statistics&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="513.008" width="270" height="54.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="43" source="29" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-15954.075025" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;New recommendation 24 hrs after VM create or resize&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="607.488" width="270" height="54.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="45" source="29" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-15358.329424999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Instance metadata&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="701.9680000000001" width="270" height="54.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="47" source="29" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-14722.902225" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Startup scripts&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="796.4480000000001" width="270" height="54.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="49" source="31" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-13804.849424999999" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Live migrate&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="890.928" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="51" source="31" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-13784.000624999999" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Auto restart&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="973.408" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="53" source="33" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-13071.239024999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Multiple regions for availability&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1055.888" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="55" source="35" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-13070.001824999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Create patch approvals&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1138.368" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="57" source="35" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-12848.801824999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Set up flexible scheduling&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1220.848" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="59" source="35" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-12088.048225" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Apply advanced patch configuration settings&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1303.328" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="61" source="37" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="-11530.761424999999" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Up to 91% discount&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1550.7679999999998" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="63" source="35" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-11307.087024999999" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;per-second billing&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF1212;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1385.808" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="65" source="35" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-10488.597424999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="&lt;blockquote style=&quot;margin: 0 0 0 40px ; border: none ; padding: 0px&quot;&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Sustained use discounts/ committed use discounts&lt;/b&gt;&lt;/font&gt;&lt;/blockquote&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF1212;align=center;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1468.288" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="67" source="37" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="-9393.799824999998" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;No SLA&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="700" y="1633.2479999999998" width="270" height="42.48" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="113" source="9" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="-3305.7225" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="113" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Lower price for interruptible service (up to 91%)&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#009900;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="1674.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="115" source="9" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-559.1034999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="115" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;VM might be terminated at any time&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="1818.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="117" source="9" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-539.8534999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="117" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;No live migrate; no auto start&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="1962.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="119" source="115" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-519.8534999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="119" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;No charge if terminated in the first minue&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="590" y="1738.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="121" source="115" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="-519.8534999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="121" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;24 hours max&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="590" y="1818.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="123" source="115" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="-503.8534999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="123" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;30-second terminate warning , but not guaranteed&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="590" y="1898.4880000000003" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="125" source="9" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="-487.8534999999997" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="125" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;You can request that CPI quota for a region be split between regular and preemption&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2042.4880000000003" width="180" height="57.51" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="127" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="-1073.9105" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="127" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Spot VMs&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#999999;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="2309.998" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="129" source="127" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="280" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="129" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Latest version of preemptible VMs&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#000000;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2139.998" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="131" source="127" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="1026.812" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="131" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Share the same pricing model with preemptible VMs&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#FF1212;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2219.998" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="133" source="127" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="1046.812" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="133" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;No minimum or maximum runtime&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2299.998" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="135" source="127" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="1066.812" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="135" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;are finite Compute Engine resources, so they might not always be available&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2379.998" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="137" source="127" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="1090.062" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="137" value="&lt;b style=&quot;color: rgb(255 , 255 , 255)&quot;&gt;No live migrate; no auto start&lt;/b&gt;" style="whiteSpace=wrap;html=1;fillColor=#330066;" vertex="1" parent="2">
+                    <mxGeometry x="360" y="2469.998" width="180" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

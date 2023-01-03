@@ -1,0 +1,358 @@
+<mxfile host="65bd71144e">
+    <diagram id="pYMMBKug9epqVvtep1t_" name="Page-1">
+        <mxGraphModel dx="1168" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1920" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="swimlane;startSize=20;horizontal=0;childLayout=treeLayout;horizontalTree=1;resizable=0;containerType=tree;fillColor=#330066;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="310" width="1540" height="2407" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Network" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="40" y="1112.25" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="VPC peering" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="150" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" parent="2" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="9" source="4" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-6179.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Use VPC peering to connect networks when they are both in Google Cloud" style="whiteSpace=wrap;html=1;fillColor=#0066CC;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="20" width="330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="11" source="4" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-6219.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="VPC peering allows private RFC 1918 connectivity across 2 VPC networks regardless of whether they belong to the same project or the same organizzation" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="120" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="13" source="4" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-6119.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Each VPC network will have firewall ruled that define traffic that is allowed or denied between the networks" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="240" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="15" source="11" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5949.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="The subnet&amp;nbsp; ranges do not overlap" style="whiteSpace=wrap;html=1;fillColor=#0066CC;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="120" width="330" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="17" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-5909.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="Cloud VPN" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="678" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="19" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-5687.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="Useful for low-volume data connections" style="whiteSpace=wrap;html=1;fillColor=#009900;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="360" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="21" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5582.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="Connect your on-premises network to your Google Cloud VPC network through an IPsec VPN tunnel" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="440" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="23" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5562.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="Traffic traveling between the two networks is encrypted by one VPN gateway and then decrypted by another VPN gateway" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="520" width="330" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="25" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5536.5125" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="Classic VPN: 99.9% SLA&lt;br&gt;HA VPN:99,99% SLA" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="620" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="27" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5212.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="Supports(Depends on your SLA requirements and routing options)" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="796" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="29" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5192.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="Site-to-site VPN" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="676" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="31" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-5022.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="Static routes (Classic VPN only)" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="756" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="33" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-4998.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Dynamic routes (Cloud Router)" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="836" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="35" source="27" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-4974.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="IKEv1 and IKEv2 ciphers" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="916" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="37" source="17" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-5168.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Doen't support use cases where" style="whiteSpace=wrap;html=1;fillColor=#FF1212;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="996" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="39" source="37" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-4736.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="Clients computers need to dial in to a VPN using Client VPN software" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="996" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="41" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-4994.2625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="HA VPN (High-Availability version of Cloud VPN)" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="1292.875" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="43" source="41" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-4433.0625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="Google Cloud automatically chooses 2 external IP addresses" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1167.25" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="45" source="43" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-3377.0625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="Supports multiple tunnels" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1076" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="47" source="43" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-3377.0625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="VPN tunnels connected to HA VPN gateways must use dynamic (BCP) routing" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1156" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="49" source="43" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-3357.0625" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="You can also create multiple HA gateways, when you delete them, Google Cloud releases the IP addresses for reuses" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1236" width="330" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="51" source="49" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-3331.4375" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="You can configure HA VPN gateway with only one active interface and one external IP address. However , this configuration does not provide a 99.90% service availability SLA" style="whiteSpace=wrap;html=1;fillColor=#FF1212;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="1190" y="1236" width="330" height="62.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="53" source="41" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-3331.4375" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="Supports site-to-site VPN for different topoligies/configuration scenarios" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1418.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="55" source="53" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="-2616.3125" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="An HA VPN gateway to peer VPN devices" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1338.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="57" source="53" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-2526.125" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="An HA VPN gateway to an AWS virtual private gateway" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1418.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="59" source="53" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="-2496.125" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="2 HA VPN gateways connected to each other" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1498.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="61" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-3163.1875" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="Cloud Router" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="1642.5" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="63" source="61" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-2371.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" value="Enables dynamic discovery of routes between connected networks" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1642.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="65" source="61" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-1535.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="In order to use dynamic routes, you need to configure Cloud Routers" style="whiteSpace=wrap;html=1;fillColor=#0066CC;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1562.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="67" source="61" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="88.75" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="This routing method allows for routes to be updated and exchanged wihtout changing the tunnel configuration" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1722.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="69" source="3" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="-638.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="Cloud Interconnect" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="190" y="2074.5" width="190" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="71" source="69" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="310" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="Use Cloud Interconnect when a dedicated high-speed connection si required between networks" style="whiteSpace=wrap;html=1;fillColor=#009900;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1802.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="73" source="69" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="1136.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="Types" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="2074.5" width="80" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="75" source="73" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="1176.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="75" value="Dedicated Interconnect" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="560" y="1994.5" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="77" source="69" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="1156.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="77" value="For extending on-premises networks" style="whiteSpace=wrap;html=1;fillColor=#009900;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="1882.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="79" source="73" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="1316.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="79" value="Partner Interconnect" style="whiteSpace=wrap;html=1;fillColor=#999999;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="560" y="2154.5" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="81" source="75" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="1346.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="81" value="Provides a direct connection to a colocation facility" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="1954.5" width="340" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="83" source="75" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="1306.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="83" value="From 10 to 200 Gbps" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="2034.5" width="340" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="85" source="79" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="1382.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="85" value="Provides a connection through a service provider" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="2114.5" width="340" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="87" source="79" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="1445.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="87" value="Can purchase less bandwidth from 50 Mbps" style="whiteSpace=wrap;html=1;fillColor=#330066;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="810" y="2194.5" width="340" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="89" source="69" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="1264.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="89" value="Allow access to VPC resources using internal IP address space" style="whiteSpace=wrap;html=1;fillColor=#009900;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="2266.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;html=1;rounded=0;" edge="1" target="93" source="69" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="440" y="2384.5" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="93" value="Private Google Access aloows on-premises hosts to access Google services using private IPs" style="whiteSpace=wrap;html=1;fillColor=#009900;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="2">
+                    <mxGeometry x="430" y="2346.5" width="330" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
