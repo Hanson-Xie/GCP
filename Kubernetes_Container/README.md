@@ -1,5 +1,8 @@
-# Container 介紹
+# Container與Kubernetes(k8s) 介紹
     若要了解Container帶來的好處，就要先了解Container的歷史演進
+    以下則會分幾個部分介紹
+    - [Container演進](##過去如何部署apps?)
+    - [Container images](## Container images)
 
 ## 過去如何部署apps?
 
@@ -20,7 +23,28 @@
     - Container 透過將User spaces分離出來，只用以執行app的程式
     - Container 不像VM裝了整個的作業系統，且不用重啟整個作業系統來BOOT UP VM
 
-
 下圖為特定server、VM與Container架構比較
 ![container_img](imgs/container_involving.png)
+
+## Container images
+
+1. Container 運用的科技
+　　- Linux process
+    　　- 每一個Linux Process有自己的虛擬記憶體位址空間與其他位址區隔開來，並且可以快速創造與銷毀
+　　- Linux namespaces
+    　　- 控制一個app可以看到的：process ID、ip addresses等等
+　　- cgroups
+    　　- 控制一個app可以使用的資源：CPU、記憶體等等        
+　　- Union File System
+    　　- 封裝apps，並將會用到的相依套件封裝成一組數層的結構，也就是images
+
+2. Container images
+    在製作images中，使用者會需要定義一個dockerfile的檔案，每一個dockerfile的指令會形成images中的一層layer，且該layer是唯讀(read-only)屬性，如下圖：
+
+    ![layer](imgs/images_layer.png)
+
+    左圖dockerfile的每一行指令會為右方的images製造一層layer，images最上方的Container layer則提供讓使用者寫入新資訊等各種調整動作。
+
+    - 當更新images的時候，Container僅會重新製作和之前有差異的layer
+
 
